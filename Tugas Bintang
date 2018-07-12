@@ -1,0 +1,58 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main(){
+	int bil;
+	cout<<"\t\tProgram Ini Dibuat Oleh fadyl rizki M - 20170801020\n";
+	cout<<"\t\t        Praktikum Bahasa Pemrograman\n\n";
+	cout<<"Masukkan Size <Ukuran> =  ";cin>>bil;
+	
+	// bagian pengulangan atas
+	for (int i = bil; i >= 0; i--)
+	{
+		cout<<"\n";
+		for (int j = i; j >= 0; j--)
+		{
+			cout<<" *";
+		}
+		for (int k = i; k < bil; k++)
+		{
+			cout<<"  ";
+		}
+		
+		for (int k = i; k < bil; k++)
+		{
+			cout<<"  ";
+		}
+		for (int j = i; j >= 0; j--)
+		{
+			cout<<" *";
+		}
+	}
+		
+	
+	// bagian pengulangan bawah
+	for (int i = bil; i >= 0; i--)
+	{
+		cout<<"\n";
+		for (int j = i; j <= bil; j++)
+		{
+			cout<<" *";
+		}
+		for (int k = i; k > 0; k--)
+		{
+			cout<<"  ";
+		}
+		
+		for (int k = i; k > 0; k--)
+		{
+			cout<<"  ";
+		}
+		for (int j = i; j <= bil; j++)
+		{
+			cout<<" *";
+		}		
+	}
+		
+	getch();
+}
